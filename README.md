@@ -1,127 +1,97 @@
-littlex 🚀
+🧠 LittleX – AI-Powered Minimal Social Media App (JAC)
 
-littlex is a lightweight social-media–style application built using the Jac programming language and the Jaseci ecosystem. It demonstrates how graph-based programming can be used to model users, posts, and interactions naturally.
+📌 Project Overview
+LittleX is a minimal social media application built entirely using the JAC programming language.
+The project demonstrates how Artificial Intelligence (AI) can be integrated into a social platform to enhance safety, interaction, and content understanding.
 
-This project is designed for learning, experimentation, and submission purposes where Jac / Jaseci / byLLM compliance is required.
+This project was developed as part of an academic requirement, focusing on:
+Workflow-oriented programming
+AI-assisted decision making
+Persistent data handling
+Ethical content moderation
 
+🚀 Features
 
----
+📝 Post Creation
+Users can create social media posts
+Posts are stored persistently in a JSON file
 
-✨ Features
+🛡️ AI Content Moderation
+Every post is checked using an AI model
+Unsafe or inappropriate content is automatically rejected
 
-👤 User profiles modeled as graph nodes
+😊 AI Sentiment Analysis
+Approved posts are analyzed as:
+Positive
+Neutral
+Negative
+Sentiment is stored and displayed in the feed
 
-📝 Posts and interactions represented as relationships (edges)
+❤️ Like System
+Users can like posts
+Likes are stored and updated persistently
 
-🔄 Walkers for traversing and manipulating the social graph
+💬 AI-Generated Comments
+AI can generate friendly replies to any post
+Demonstrates AI-driven engagement
 
-🧠 Clean example of Object-Spatial Programming (OSP) in Jac
+🧠 AI Feed Summary
+AI summarizes all posts in the feed
+Useful for quickly understanding platform activity
 
-⚡ Minimal, readable Jac code for beginners
+🧠 AI Technologies Used
+LLM Integration using llm.complete
+AI used for:
+Content moderation
+Sentiment classification
+Comment generation
+Feed summarization
+All AI logic is embedded directly inside JAC walkers.
 
+🛠️ Technologies
+Language: JAC
+AI Engine: Built-in LLM interface
+Storage: JSON (posts.json)
+Environment: Python + Jaclang
 
-
----
-
-🛠️ Tech Stack
-
-Language: Jac (.jac)
-
-Framework: Jaseci / Jac Runtime
-
-Paradigm: Graph-based (nodes, edges, walkers)
-
-Platform: Cross-platform (Windows, Linux, macOS)
-
-
-
----
-
-📁 Project Structure
+📂 Project Structure
 
 littlex/
 │
-├── littlex.jac        # Main Jac application logic
-├── README.md          # Project documentation
-└── LICENSE            # (Optional) Open-source license
-
-
----
+├── littlex.jac      # Main JAC application
+├── posts.json       # Persistent post storage
+└── README.md        # Project documentation
 
 ▶️ How to Run the Project
 
-1️⃣ Install Jac
+1️⃣ Install Requirements
+pip install jaclang
 
-Make sure Python is installed, then run:
-
-pip install -U jaclang
-
-Verify installation:
-
-jac --version
-
-
----
-
-2️⃣ Clone the Repository
-
-git clone https://github.com/Amunza254/littlex.git
-cd littlex
-
-
----
-
-3️⃣ Run the Application
-
+2️⃣ Run the Application
 jac run littlex.jac
 
-Or serve it (if applicable):
+🧪 Example Walkers
+create_post – Create a post with AI moderation & sentiment analysis
+view_feed – Display all posts
+like_post – Like a post
+ai_comment – Generate AI replies
+summarize_feed – Summarize all posts using AI
 
-jac serve littlex.jac
+🎓 Learning Outcomes
+This project demonstrates:
+Practical use of AI in software systems
+Workflow-based programming using walkers
+Safe AI decision-making
+Persistent data handling
+Ethical content moderation
 
+🔮 Future Improvements
+User authentication
+Comment storage
+Toxicity scoring
+Trending post detection
+Web or mobile interface
 
----
-
-🧠 Key Jac Concepts Used
-
-Concept	Description
-
-Node	Represents entities like users or posts
-Edge	Represents relationships (follow, post, etc.)
-Walker	Traverses and operates on the graph
-Graph	The connected data model
-
-
-
----
-
-🎯 Project Purpose
-
-This project was built to:
-
-Practice Jac language fundamentals
-
-Demonstrate graph-based application design
-
-Meet requirements where projects must be written in Jac / Jaseci / byLLM
-
-Serve as a foundation for future enhancements
-
-
-
----
-
-🚀 Future Improvements
-
-Add authentication logic
-
-Connect a frontend UI
-
-Persist graph data
-
-Integrate byLLM or OSP-based AI features
-
-👤 Author
-
+👨‍💻 Author
 Sam Amunza
 GitHub: https://github.com/Amunza254
